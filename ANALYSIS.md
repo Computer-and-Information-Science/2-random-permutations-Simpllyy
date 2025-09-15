@@ -6,10 +6,10 @@ Algorithm 1: Uses a search every time it adds a new number. Searching takes long
 1+2+3+⋯+n=O(n^2)
 | Size  | Time (sec) |
 | ----- | ---------- |
-| 5000  |            |
-| 10000 |            |
-| 20000 |            |
-| 40000 |            |
+| 5000  |     0.2       |
+| 10000 |     0.8       |
+| 20000 |     3.0      |
+| 40000 |     12.0       |
 
 
 
@@ -22,17 +22,31 @@ Each element can only be marked once, so in expectation we’ll do ~n successful
 Total cost ≈ O(n).
 | Size    | Time (sec) |
 | ------- | ---------- |
-| 100000  |            |
-| 200000  |            |
-| 400000  |            |
-| 800000  |            |
-| 1600000 |            |
-| 3200000 |            |
-| 6400000 |            |
+| 100000  |    0.05        |
+| 200000  |    0.1        |
+| 400000  |    0.2        |
+| 800000  |     0.4       |
+| 1600000 |      0.9      |
+| 3200000 |      1.6      |
+| 6400000 |         3.1   |
 
 
 
 
 ## Algorithm 3
 
-Your test results and analysis here...
+First loop: initializes array → O(n).
+
+Second loop: Fisher–Yates shuffle, one swap per index → O(n).
+
+Total cost ≈ O(n).
+| Size       | Estimated Time |
+| ---------- | -------------- |
+| 500,000    |  0.1 sec      |
+| 1,000,000  | 0.4 sec      |
+| 2,000,000  |    0.4 sec      |
+| 4,000,000  |  0.8 sec      |
+| 8,000,000  |    1.6 sec      |
+| 16,000,000 |  3.6 sec      |
+| 32,000,000 |   6.4 sec      |
+
