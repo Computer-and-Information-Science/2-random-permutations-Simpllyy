@@ -13,7 +13,8 @@ Algorithm 1: Uses a search every time it adds a new number. Searching takes long
 
 
 
-## Algorithm 2:Each random draw and check !used[r] is O(1).
+## Algorithm 2:
+Each random draw and check !used[r] is O(1).
 
 The while loop runs until the array is full. That’s n successful insertions.
 
